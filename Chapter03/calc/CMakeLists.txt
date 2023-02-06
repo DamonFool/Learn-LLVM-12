@@ -17,7 +17,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_definitions(${LLVM_DEFINITIONS})
 include_directories(SYSTEM ${LLVM_INCLUDE_DIRS})
-llvm_map_components_to_libnames(llvm_libs Core Support)
+llvm_map_components_to_libnames(llvm_libs core support)
 
 if(LLVM_COMPILER_IS_GCC_COMPATIBLE)
   if(NOT LLVM_ENABLE_RTTI)
